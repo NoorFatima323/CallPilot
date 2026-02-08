@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CallPilot – Agentic Appointment AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <header>
+        <h1>CallPilot</h1>
+        <p>Agentic Voice AI for Autonomous Appointment Scheduling</p>
+    </header>
+
+    <section class="input-card">
+        <h2>Request an Appointment</h2>
+
+        <label>Service Type</label>
+        <select id="service">
+            <option value="dentist">Dentist</option>
+            <option value="car">Car Repair</option>
+            <option value="hair">Hair Salon</option>
+            <option value="general">General Clinic</option>
+        </select>
+
+        <label>Preferred Date</label>
+        <input type="date" id="date">
+
+        <label>Time Preference</label>
+        <select id="time">
+            <option value="any">Any</option>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select>
+
+        <label>Your Name</label>
+        <input type="text" id="name" value="Noor">
+
+        <button onclick="bookAppointment()">Run Agentic Booking</button>
+    </section>
+
+    <section class="output-card">
+        <h2>Agent Decision</h2>
+        <pre id="output">Waiting for request...</pre>
+         <div id="resultBox" class="result-box hidden">
+        <h3>Appointment Confirmed ✅</h3>
+        <p id="resultText"></p>
+        </div>
+    </section>
+   
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
