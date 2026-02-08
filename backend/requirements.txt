@@ -1,5 +1,5 @@
 fastapi
 uvicorn
+pydantic
 pyttsx3
-random
-threading
+python-dotenv
